@@ -1,0 +1,88 @@
+.creators {
+  padding: 60px 0;
+  background: #2b2b2b;
+
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    & > div {
+      max-width: 600px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+
+  &__subtitle {
+    color: #aaa;
+    font-size: 16px;
+  }
+
+  &__btn {
+    background: transparent;
+    border: 1px solid #7b2cff;
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #7b2cff;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+  }
+}
+
+.creator {
+  background: #3b3b3b;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+
+  &__number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #2b2b2b;
+    border-radius: 50%;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #fff;
+  }
+
+  &__sales {
+    font-size: 14px;
+    color: #aaa;
+
+    strong {
+      color: #fff;
+    }
+  }
+}
