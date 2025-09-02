@@ -1,0 +1,87 @@
+.hero {
+  padding: 80px 0;
+background: #2b2b2b;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__content {
+    flex: 1;
+
+    .hero__title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .hero__text {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #fff;
+      margin-bottom: 30px;
+      max-width: 480px;
+    }
+
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .btn {
+        display: inline-block;
+        padding: 14px 32px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 8px;
+        transition: 0.3s;
+
+        &--primary {
+        background: linear-gradient(90deg, #a855f7, #6366f1);
+
+          color: #fff;
+
+          &:hover {
+        background: linear-gradient(90deg, #6366f1, #a855f7);
+          }
+        }
+
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 32px;
+
+    .stat {
+      h3 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      p {
+        font-size: 23px;
+        color: #fff;
+      }
+    }
+  }
+
+  &__image {
+    flex: 1;
+    text-align: right;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
